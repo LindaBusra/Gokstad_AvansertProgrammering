@@ -1,0 +1,64 @@
+http://localhost:5008/swagger/index.html
+
+http://localhost:5008/swagger/api/books
+
+https://github.com/Rezhaaa97/LibraryApi
+
+postman: http://localhost:5008/api/books
+
+
+
+Oppgavebeskrivelse
+Denne oppgaven har to hoveddeler: Validering, logging og feilhåndtering, samt integrering av
+Entity Framework og databaser. Formålet er å gjøre applikasjonen mer robust og gi
+studentene praktisk erfaring med å jobbe med databaser.
+
+
+Oppgave Del1: Validering, Feilhåndtering og Logging
+
+add package / kjør i terminal for feilhåndtering:
+dotnet add package Serilog.AspNetCore
+dotnet add package Serilog.Settings.Configuration
+dotnet add package Serilog.Sinks.Console
+dotnet add package Serilog.Sinks.File
+
+####################################################################################
+
+Oppgave Del2: Entity Framework og Database
+
+1-add to pakker:
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+
+2-install:  https://sqlitebrowser.org/
+
+etter du har skrevet koden install migrations
+
+3-dotnet tool install --global dotnet-ef
+
+4-kjør koden med (hvis du legger noe, legger an kolonne osv... )
+dotnet ef migrations add InitialCreate
+
+--etter du kjøre koden: det kommer: og det oppretttes en mappe som heter Migrations,
+pg den har inni seg tree mapper
+Build started...
+Build succeeded.
+Done. To undo this action, use 'ef migrations remove'
+
+5- dotnet ef database update
+
+6- dotnet ef migrations add AddedTodos     (I added a Todos table)
+
+
+7- dotnet watch    (For å se endringer direkte in i swager)
+
+
+//!!! clean code, clean structure in exam  :)
+
+
+
+
+
