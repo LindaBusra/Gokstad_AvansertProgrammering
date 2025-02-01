@@ -1,0 +1,93 @@
+2024-12-19 00:49:59.496 +01:00 [INF] Now listening on: http://localhost:5094
+2024-12-19 00:49:59.548 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-19 00:49:59.551 +01:00 [INF] Hosting environment: Development
+2024-12-19 00:49:59.552 +01:00 [INF] Content root path: C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\Emne7_Mappe4_2024\TodoApplikasjon
+2024-12-19 00:50:03.875 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2024-12-19 00:50:03.957 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-12-19 00:50:03.964 +01:00 [INF] HTTP GET / responded 404 in 1.0498 ms
+2024-12-19 00:50:03.982 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 111.2867ms
+2024-12-19 00:50:04.006 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2024-12-19 00:50:25.165 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2024-12-19 00:50:25.183 +01:00 [INF] HTTP GET / responded 404 in 0.2577 ms
+2024-12-19 00:50:25.190 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 25.3647ms
+2024-12-19 00:50:25.200 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2024-12-19 00:50:28.188 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2024-12-19 00:50:28.323 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 135.5731ms
+2024-12-19 00:50:28.562 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2024-12-19 00:50:28.681 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.01ms
+2024-12-19 01:01:09.444 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos/category/1 - null null
+2024-12-19 01:01:09.463 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:01:09.517 +01:00 [INF] Route matched with {action = "GetTodosByCategory", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetTodosByCategory(Int32) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-12-19 01:01:10.686 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-19 01:01:11.229 +01:00 [INF] Executed DbCommand (29ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."CategoryId", "t"."Description", "t"."IsCompleted", "t"."Title", "c"."Id", "c"."Name"
+FROM "Todos" AS "t"
+INNER JOIN "Categories" AS "c" ON "t"."CategoryId" = "c"."Id"
+WHERE "t"."CategoryId" = @__categoryId_0
+2024-12-19 01:01:11.335 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetTodosByCategory (TodoApplikasjon) in 1810.586ms
+2024-12-19 01:01:11.338 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:01:11.340 +01:00 [INF] HTTP GET /api/Todos/category/1 responded 200 in 1878.5134 ms
+2024-12-19 01:01:11.349 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos/category/1 - 200 null application/json; charset=utf-8 1904.4887ms
+2024-12-19 01:01:23.839 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos/category/2/count - null null
+2024-12-19 01:01:23.855 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CountTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:01:23.862 +01:00 [INF] Route matched with {action = "CountTodosByCategory", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32] CountTodosByCategory(Int32) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-12-19 01:01:23.925 +01:00 [INF] Executed DbCommand (1ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Todos" AS "t"
+WHERE "t"."CategoryId" = @__categoryId_0
+2024-12-19 01:01:23.935 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-19 01:01:23.941 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CountTodosByCategory (TodoApplikasjon) in 76.2369ms
+2024-12-19 01:01:23.944 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CountTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:01:23.946 +01:00 [INF] HTTP GET /api/Todos/category/2/count responded 200 in 90.9037 ms
+2024-12-19 01:01:23.948 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos/category/2/count - 200 null application/json; charset=utf-8 109.7073ms
+2024-12-19 01:01:36.061 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos/completed - null null
+2024-12-19 01:01:36.067 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetCompletedTodosWithCategory (TodoApplikasjon)'
+2024-12-19 01:01:36.071 +01:00 [INF] Route matched with {action = "GetCompletedTodosWithCategory", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetCompletedTodosWithCategory() on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-12-19 01:01:36.159 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-19 01:01:36.172 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."CategoryId", "t"."Description", "t"."IsCompleted", "t"."Title", "c"."Id", "c"."Name"
+FROM "Todos" AS "t"
+INNER JOIN "Categories" AS "c" ON "t"."CategoryId" = "c"."Id"
+WHERE "t"."IsCompleted"
+2024-12-19 01:01:36.177 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetCompletedTodosWithCategory (TodoApplikasjon) in 101.7862ms
+2024-12-19 01:01:36.180 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetCompletedTodosWithCategory (TodoApplikasjon)'
+2024-12-19 01:01:36.183 +01:00 [INF] HTTP GET /api/Todos/completed responded 200 in 116.0222 ms
+2024-12-19 01:01:36.188 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos/completed - 200 null application/json; charset=utf-8 127.0056ms
+2024-12-19 01:23:00.931 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos/category/1 - null null
+2024-12-19 01:23:01.113 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:23:01.123 +01:00 [INF] Route matched with {action = "GetTodosByCategory", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetTodosByCategory(Int32) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-12-19 01:23:01.238 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-19 01:23:01.346 +01:00 [INF] Executed DbCommand (25ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."CategoryId", "t"."Description", "t"."IsCompleted", "t"."Title", "c"."Id", "c"."Name"
+FROM "Todos" AS "t"
+INNER JOIN "Categories" AS "c" ON "t"."CategoryId" = "c"."Id"
+WHERE "t"."CategoryId" = @__categoryId_0
+2024-12-19 01:23:01.720 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetTodosByCategory (TodoApplikasjon) in 531.3984ms
+2024-12-19 01:23:03.056 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:23:03.060 +01:00 [INF] HTTP GET /api/Todos/category/1 responded 200 in 1946.5781 ms
+2024-12-19 01:23:03.068 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos/category/1 - 200 null application/json; charset=utf-8 2137.8895ms
+2024-12-19 01:23:19.359 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos/category/2/count - null null
+2024-12-19 01:23:19.525 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CountTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:23:19.761 +01:00 [INF] Route matched with {action = "CountTodosByCategory", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Int32] CountTodosByCategory(Int32) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-12-19 01:23:19.772 +01:00 [INF] Executed DbCommand (0ms) [Parameters=[@__categoryId_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*)
+FROM "Todos" AS "t"
+WHERE "t"."CategoryId" = @__categoryId_0
+2024-12-19 01:23:19.990 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Int32'.
+2024-12-19 01:23:19.996 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CountTodosByCategory (TodoApplikasjon) in 228.5208ms
+2024-12-19 01:23:20.008 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CountTodosByCategory (TodoApplikasjon)'
+2024-12-19 01:23:20.040 +01:00 [INF] HTTP GET /api/Todos/category/2/count responded 200 in 515.8992 ms
+2024-12-19 01:23:20.071 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos/category/2/count - 200 null application/json; charset=utf-8 711.9308ms
+2024-12-19 01:23:29.809 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos/completed - null null
+2024-12-19 01:23:29.955 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetCompletedTodosWithCategory (TodoApplikasjon)'
+2024-12-19 01:23:29.968 +01:00 [INF] Route matched with {action = "GetCompletedTodosWithCategory", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetCompletedTodosWithCategory() on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-12-19 01:23:30.133 +01:00 [INF] Executing OkObjectResult, writing value of type 'Microsoft.EntityFrameworkCore.Query.Internal.EntityQueryable`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-19 01:23:30.200 +01:00 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT "t"."Id", "t"."CategoryId", "t"."Description", "t"."IsCompleted", "t"."Title", "c"."Id", "c"."Name"
+FROM "Todos" AS "t"
+INNER JOIN "Categories" AS "c" ON "t"."CategoryId" = "c"."Id"
+WHERE "t"."IsCompleted"
+2024-12-19 01:23:30.638 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetCompletedTodosWithCategory (TodoApplikasjon) in 532.8484ms
+2024-12-19 01:23:30.748 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetCompletedTodosWithCategory (TodoApplikasjon)'
+2024-12-19 01:23:30.755 +01:00 [INF] HTTP GET /api/Todos/completed responded 200 in 800.0572 ms
+2024-12-19 01:23:30.838 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos/completed - 200 null application/json; charset=utf-8 1029.0017ms
