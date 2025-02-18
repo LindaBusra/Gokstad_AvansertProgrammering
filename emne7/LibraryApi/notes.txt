@@ -1,0 +1,48 @@
+http://localhost:5008/swagger/index.html
+
+http://localhost:5008/swagger/api/books
+
+https://github.com/Rezhaaa97/LibraryApi/tree/main
+
+postman: http://localhost:5008/api/books
+
+add package / kjør i terminal:
+dotnet add package Serilog.AspNetCore
+dotnet add package Serilog.Settings.Configuration
+dotnet add package Serilog.Sinks.Console
+dotnet add package Serilog.Sinks.File
+
+
+1-add pakker:
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+2-install:  https://sqlitebrowser.org/   migrations
+3-dotnet tool install --global dotnet-ef
+4-kjør koden med (hvis du legger noe, legger an kolonne osv... )
+dotnet ef migrations add InitialCreate   ( det oppretttes en mappe som heter Migrations, med tree filer inni seg)
+5- dotnet ef database update
+6- dotnet ef migrations add AddedTodos     (I added a Todos table)
+7- dotnet watch    (For å se endringer direkte in i swager) 
+
+slette database  Remove-Item -Path "C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\library.db" -Force
+
+
+
+slette database
+rm -rf Migrations
+rm -rf library.database
+
+
+dotnet ef migrations add SeedingData
+dotnet ef database update
+
+-- dotnet ef migrations add UpdatedDbContext
+
+--siste undervisning, for authentication:
+dotnet add package Microsoft.AspNetCore.Authentication.JwtBearer --version 8.0.0
+dotnet add package Microsoft.IdentityModel.Tokens
+dotnet add package System.IdentityModel.Tokens.Jwt
+
+--for video: Clipchamp
+--for video: davinci
