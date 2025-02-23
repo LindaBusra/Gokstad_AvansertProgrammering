@@ -1,0 +1,18 @@
+dotnet new webapi -o FileName
+
+http://localhost:5008/swagger/index.html
+
+http://localhost:5008/swagger/api/books
+
+https://github.com/Rezhaaa97/LibraryApi
+
+postman: http://localhost:5008/api/books
+
+
+loggingmiddleware sayfasini sildik, onun yerine log'lar log klasorune eklendi.
+
+kjør i terminal:
+dotnet add package Serilog.AspNetCore
+dotnet add package Serilog.Settings.Configuration
+dotnet add package Serilog.Sinks.Console
+dotnet add package Serilog.Sinks.File
