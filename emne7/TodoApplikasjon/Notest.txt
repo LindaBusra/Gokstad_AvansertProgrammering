@@ -1,0 +1,23 @@
+1-add to pakker:
+
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+
+
+2-install:  https://sqlitebrowser.org/
+
+etter du har skrevet koden install migrations
+
+3-dotnet tool install --global dotnet-ef
+
+#burdayim!!!!!!!!!!!!
+
+4-kjør koden med (hvis du legger noe, legger an kolonne osv... )
+dotnet ef migrations add InitialCreate
+
+--etter du kjøre koden: det kommer: og det oppretttes en mappe som heter Migrations,
+pg den har inni seg tree mapper
+Build started...
+Build succeeded.
+Done. To undo this action, use 'ef migrations remove'
