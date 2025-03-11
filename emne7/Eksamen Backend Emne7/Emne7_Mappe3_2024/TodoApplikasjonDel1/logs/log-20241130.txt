@@ -1,0 +1,214 @@
+2024-11-30 16:53:06.497 +01:00 [INF] Now listening on: http://localhost:5094
+2024-11-30 16:53:06.539 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-30 16:53:06.543 +01:00 [INF] Hosting environment: Development
+2024-11-30 16:53:06.547 +01:00 [INF] Content root path: C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\Emne7_Mappe3_2024\TodoApplikasjon
+2024-11-30 16:53:24.453 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2024-11-30 16:53:24.504 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-30 16:53:24.511 +01:00 [INF] HTTP GET / responded 404 in 0.8065 ms
+2024-11-30 16:53:24.527 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 76.9033ms
+2024-11-30 16:53:24.545 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2024-11-30 16:53:27.282 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger - null null
+2024-11-30 16:53:27.293 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger - 301 0 null 10.4019ms
+2024-11-30 16:53:27.301 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2024-11-30 16:53:27.397 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 96.2134ms
+2024-11-30 16:53:27.406 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-bundle.js - null null
+2024-11-30 16:53:27.406 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui.css - null null
+2024-11-30 16:53:27.407 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-standalone-preset.js - null null
+2024-11-30 16:53:27.449 +01:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-11-30 16:53:27.449 +01:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-11-30 16:53:27.454 +01:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-11-30 16:53:27.455 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 47.6547ms
+2024-11-30 16:53:27.455 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui.css - 200 143943 text/css 48.5489ms
+2024-11-30 16:53:27.457 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 50.4593ms
+2024-11-30 16:53:27.757 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2024-11-30 16:53:27.836 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.0732ms
+2024-11-30 16:53:31.457 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/favicon-32x32.png - null null
+2024-11-30 16:53:31.464 +01:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-11-30 16:53:31.470 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/favicon-32x32.png - 200 628 image/png 12.9952ms
+2024-11-30 16:53:41.160 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos - null null
+2024-11-30 16:53:41.167 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 16:53:41.197 +01:00 [INF] Route matched with {action = "GetTodos", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetTodos() on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 16:53:41.210 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-30 16:53:41.226 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon) in 16.2156ms
+2024-11-30 16:53:41.229 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 16:53:41.231 +01:00 [INF] HTTP GET /api/Todos responded 200 in 63.9726 ms
+2024-11-30 16:53:41.236 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos - 200 null application/json; charset=utf-8 75.9107ms
+2024-11-30 16:54:35.570 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 74
+2024-11-30 16:54:35.576 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 16:54:35.590 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 16:54:35.639 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 16:54:35.658 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 59.5285ms
+2024-11-30 16:54:35.661 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 16:54:35.662 +01:00 [INF] HTTP POST /api/Todos responded 400 in 86.9751 ms
+2024-11-30 16:54:35.665 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 94.1619ms
+2024-11-30 16:55:28.256 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 82
+2024-11-30 16:55:28.269 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 16:55:28.272 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 16:55:28.285 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 16:55:28.291 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 14.118ms
+2024-11-30 16:55:28.294 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 16:55:28.296 +01:00 [INF] HTTP POST /api/Todos responded 400 in 27.2001 ms
+2024-11-30 16:55:28.299 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 43.0303ms
+2024-11-30 16:55:44.264 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 94
+2024-11-30 16:55:44.270 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 16:55:44.273 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 16:55:44.278 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 16:55:44.280 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 3.4644ms
+2024-11-30 16:55:44.283 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 16:55:44.286 +01:00 [INF] HTTP POST /api/Todos responded 400 in 16.1356 ms
+2024-11-30 16:55:44.291 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 26.477ms
+2024-11-30 17:02:19.084 +01:00 [INF] Application is shutting down...
+2024-11-30 17:03:47.750 +01:00 [INF] Now listening on: http://localhost:5094
+2024-11-30 17:03:47.799 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-30 17:03:47.803 +01:00 [INF] Hosting environment: Development
+2024-11-30 17:03:47.806 +01:00 [INF] Content root path: C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\Emne7_Mappe3_2024\TodoApplikasjon
+2024-11-30 17:03:51.574 +01:00 [INF] Application is shutting down...
+2024-11-30 17:11:05.913 +01:00 [INF] Now listening on: http://localhost:5094
+2024-11-30 17:11:05.953 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-30 17:11:05.955 +01:00 [INF] Hosting environment: Development
+2024-11-30 17:11:05.956 +01:00 [INF] Content root path: C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\Emne7_Mappe3_2024\TodoApplikasjon
+2024-11-30 19:54:24.807 +01:00 [INF] Application is shutting down...
+2024-11-30 20:01:18.596 +01:00 [INF] Now listening on: http://localhost:5094
+2024-11-30 20:01:18.648 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-30 20:01:18.651 +01:00 [INF] Hosting environment: Development
+2024-11-30 20:01:18.653 +01:00 [INF] Content root path: C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\Emne7_Mappe3_2024\TodoApplikasjonDel1
+2024-11-30 20:01:24.512 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2024-11-30 20:01:24.566 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-30 20:01:24.572 +01:00 [INF] HTTP GET / responded 404 in 0.5468 ms
+2024-11-30 20:01:24.586 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 77.171ms
+2024-11-30 20:01:24.616 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2024-11-30 20:01:27.914 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2024-11-30 20:01:28.052 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 138.0541ms
+2024-11-30 20:01:28.318 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2024-11-30 20:01:28.410 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 92.5214ms
+2024-11-30 20:01:35.351 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos - null null
+2024-11-30 20:01:35.365 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 20:01:35.411 +01:00 [INF] Route matched with {action = "GetTodos", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetTodos() on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:01:35.425 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-30 20:01:35.454 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon) in 28.7168ms
+2024-11-30 20:01:35.457 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 20:01:35.459 +01:00 [INF] HTTP GET /api/Todos responded 200 in 95.2212 ms
+2024-11-30 20:01:35.463 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos - 200 null application/json; charset=utf-8 112.5162ms
+2024-11-30 20:01:46.083 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos/1 - null null
+2024-11-30 20:01:46.088 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodo (TodoApplikasjon)'
+2024-11-30 20:01:46.106 +01:00 [INF] Route matched with {action = "GetTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] GetTodo(Int32) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:01:46.123 +01:00 [INF] Executing OkObjectResult, writing value of type 'TodoApplikasjon.Models.Todo'.
+2024-11-30 20:01:46.128 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetTodo (TodoApplikasjon) in 14.3897ms
+2024-11-30 20:01:46.133 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodo (TodoApplikasjon)'
+2024-11-30 20:01:46.136 +01:00 [INF] HTTP GET /api/Todos/1 responded 200 in 47.6984 ms
+2024-11-30 20:01:46.140 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos/1 - 200 null application/json; charset=utf-8 57.0463ms
+2024-11-30 20:02:08.652 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 82
+2024-11-30 20:02:08.657 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:02:08.662 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:02:08.717 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 20:02:08.744 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 75.1526ms
+2024-11-30 20:02:08.748 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:02:08.749 +01:00 [INF] HTTP POST /api/Todos responded 400 in 91.9775 ms
+2024-11-30 20:02:08.751 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 99.6841ms
+2024-11-30 20:02:51.687 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 952
+2024-11-30 20:02:51.694 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:02:51.697 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:02:51.703 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 20:02:51.709 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 9.0408ms
+2024-11-30 20:02:51.767 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:02:51.770 +01:00 [INF] HTTP POST /api/Todos responded 400 in 76.4908 ms
+2024-11-30 20:02:51.785 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 97.7696ms
+2024-11-30 20:05:46.324 +01:00 [INF] Application is shutting down...
+2024-11-30 20:05:57.647 +01:00 [INF] Now listening on: http://localhost:5094
+2024-11-30 20:05:57.699 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-30 20:05:57.700 +01:00 [INF] Hosting environment: Development
+2024-11-30 20:05:57.700 +01:00 [INF] Content root path: C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\Emne7_Mappe3_2024\TodoApplikasjonDel1
+2024-11-30 20:05:58.353 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2024-11-30 20:05:58.586 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 238.3236ms
+2024-11-30 20:05:58.610 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/_framework/aspnetcore-browser-refresh.js - null null
+2024-11-30 20:05:58.616 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/_framework/aspnetcore-browser-refresh.js - 200 13732 application/javascript; charset=utf-8 6.1524ms
+2024-11-30 20:05:58.773 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2024-11-30 20:05:58.891 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 118.4587ms
+2024-11-30 20:06:10.809 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos - null null
+2024-11-30 20:06:10.816 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-30 20:06:10.827 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 20:06:10.859 +01:00 [INF] Route matched with {action = "GetTodos", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetTodos() on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:06:10.875 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-30 20:06:10.898 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon) in 32.8606ms
+2024-11-30 20:06:10.898 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 20:06:10.900 +01:00 [INF] HTTP GET /api/Todos responded 200 in 76.0367 ms
+2024-11-30 20:06:10.903 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos - 200 null application/json; charset=utf-8 93.0448ms
+2024-11-30 20:06:38.568 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 114
+2024-11-30 20:06:38.569 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:06:38.578 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:06:38.630 +01:00 [INF] Todo Todo3 added 
+2024-11-30 20:06:38.633 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'TodoApplikasjon.Models.Todo'.
+2024-11-30 20:06:38.654 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 75.1507ms
+2024-11-30 20:06:38.654 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:06:38.654 +01:00 [INF] HTTP POST /api/Todos responded 201 in 84.9525 ms
+2024-11-30 20:06:38.654 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 201 null application/json; charset=utf-8 85.8119ms
+2024-11-30 20:06:55.473 +01:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5094/api/Todos/3 - null null
+2024-11-30 20:06:55.473 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.DeleteTodo (TodoApplikasjon)'
+2024-11-30 20:06:55.476 +01:00 [INF] Route matched with {action = "DeleteTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult DeleteTodo(Int32) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:06:55.486 +01:00 [INF] Executing StatusCodeResult, setting HTTP status code 204
+2024-11-30 20:06:55.486 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.DeleteTodo (TodoApplikasjon) in 9.4602ms
+2024-11-30 20:06:55.486 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.DeleteTodo (TodoApplikasjon)'
+2024-11-30 20:06:55.487 +01:00 [INF] HTTP DELETE /api/Todos/3 responded 204 in 13.7450 ms
+2024-11-30 20:06:55.488 +01:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5094/api/Todos/3 - 204 null null 14.963ms
+2024-11-30 20:07:03.933 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 114
+2024-11-30 20:07:03.933 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:07:03.934 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 20:07:03.935 +01:00 [INF] Todo Todo3 added 
+2024-11-30 20:07:03.935 +01:00 [INF] Executing CreatedAtActionResult, writing value of type 'TodoApplikasjon.Models.Todo'.
+2024-11-30 20:07:03.936 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 2.3944ms
+2024-11-30 20:07:03.936 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 20:07:03.936 +01:00 [INF] HTTP POST /api/Todos responded 201 in 3.1165 ms
+2024-11-30 20:07:03.937 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 201 null application/json; charset=utf-8 3.8281ms
+2024-11-30 21:52:42.791 +01:00 [INF] Now listening on: http://localhost:5094
+2024-11-30 21:52:42.833 +01:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-11-30 21:52:42.835 +01:00 [INF] Hosting environment: Development
+2024-11-30 21:52:42.838 +01:00 [INF] Content root path: C:\Users\busra\Desktop\GokstadAkademiet\Avansert Programmering\emne7\Emne7_Mappe3_2024\TodoApplikasjonDel1
+2024-11-30 21:52:46.865 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2024-11-30 21:52:46.907 +01:00 [WRN] Failed to determine the https port for redirect.
+2024-11-30 21:52:46.912 +01:00 [INF] HTTP GET / responded 404 in 0.5761 ms
+2024-11-30 21:52:46.927 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 64.0285ms
+2024-11-30 21:52:46.949 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2024-11-30 21:52:50.133 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2024-11-30 21:52:50.267 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 134.1572ms
+2024-11-30 21:52:50.423 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2024-11-30 21:52:50.520 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 96.9617ms
+2024-11-30 21:54:16.431 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/ - null null
+2024-11-30 21:54:16.437 +01:00 [INF] HTTP GET / responded 404 in 0.1990 ms
+2024-11-30 21:54:16.451 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/ - 404 0 null 20.099ms
+2024-11-30 21:54:16.465 +01:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5094/, Response status code: 404
+2024-11-30 21:54:19.584 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/index.html - null null
+2024-11-30 21:54:19.590 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/index.html - 200 null text/html;charset=utf-8 6.7452ms
+2024-11-30 21:54:19.825 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - null null
+2024-11-30 21:54:19.833 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 7.6207ms
+2024-11-30 21:54:25.734 +01:00 [INF] Request starting HTTP/1.1 GET http://localhost:5094/api/Todos - null null
+2024-11-30 21:54:25.745 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 21:54:25.781 +01:00 [INF] Route matched with {action = "GetTodos", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[TodoApplikasjon.Models.Todo]] GetTodos() on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 21:54:25.794 +01:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[TodoApplikasjon.Models.Todo, TodoApplikasjon, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-11-30 21:54:25.815 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon) in 26.5773ms
+2024-11-30 21:54:25.820 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.GetTodos (TodoApplikasjon)'
+2024-11-30 21:54:25.822 +01:00 [INF] HTTP GET /api/Todos responded 200 in 78.7802 ms
+2024-11-30 21:54:25.825 +01:00 [INF] Request finished HTTP/1.1 GET http://localhost:5094/api/Todos - 200 null application/json; charset=utf-8 90.488ms
+2024-11-30 21:54:57.574 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 91
+2024-11-30 21:54:57.579 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 21:54:57.593 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 21:54:57.644 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 21:54:57.666 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 67.827ms
+2024-11-30 21:54:57.670 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 21:54:57.672 +01:00 [INF] HTTP POST /api/Todos responded 400 in 92.5151 ms
+2024-11-30 21:54:57.676 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 101.6857ms
+2024-11-30 21:55:20.863 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 77
+2024-11-30 21:55:20.868 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 21:55:20.870 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 21:55:20.877 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 21:55:20.885 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 10.4872ms
+2024-11-30 21:55:20.892 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 21:55:20.895 +01:00 [INF] HTTP POST /api/Todos responded 400 in 26.2245 ms
+2024-11-30 21:55:20.900 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 37.4385ms
+2024-11-30 21:55:39.003 +01:00 [INF] Request starting HTTP/1.1 POST http://localhost:5094/api/Todos - application/json 87
+2024-11-30 21:55:39.009 +01:00 [INF] Executing endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 21:55:39.011 +01:00 [INF] Route matched with {action = "CreateTodo", controller = "Todos"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.ActionResult`1[TodoApplikasjon.Models.Todo] CreateTodo(TodoApplikasjon.Models.Todo) on controller TodoApplikasjon.Controllers.TodosController (TodoApplikasjon).
+2024-11-30 21:55:39.017 +01:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2024-11-30 21:55:39.023 +01:00 [INF] Executed action TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon) in 7.2396ms
+2024-11-30 21:55:39.028 +01:00 [INF] Executed endpoint 'TodoApplikasjon.Controllers.TodosController.CreateTodo (TodoApplikasjon)'
+2024-11-30 21:55:39.031 +01:00 [INF] HTTP POST /api/Todos responded 400 in 22.2167 ms
+2024-11-30 21:55:39.036 +01:00 [INF] Request finished HTTP/1.1 POST http://localhost:5094/api/Todos - 400 null application/problem+json; charset=utf-8 32.6725ms
