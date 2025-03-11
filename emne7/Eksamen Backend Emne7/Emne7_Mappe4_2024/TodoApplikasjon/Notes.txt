@@ -1,0 +1,30 @@
+http://localhost:5008/swagger/index.html
+
+http://localhost:5008/swagger/api/books
+
+https://github.com/Rezhaaa97/LibraryApi
+
+postman: http://localhost:5008/api/books
+
+
+add package / kjør i terminal for feilhåndtering:
+dotnet add package Serilog.AspNetCore
+dotnet add package Serilog.Settings.Configuration
+dotnet add package Serilog.Sinks.Console
+dotnet add package Serilog.Sinks.File
+
+
+1-add pakker:
+dotnet add package Microsoft.EntityFrameworkCore
+dotnet add package Microsoft.EntityFrameworkCore.Sqlite
+dotnet add package Microsoft.EntityFrameworkCore.Tools
+2-install:  https://sqlitebrowser.org/   migrations
+3-dotnet tool install --global dotnet-ef
+4-kjør koden med (hvis du legger noe, legger an kolonne osv... )
+dotnet ef migrations add InitialCreate   ( det oppretttes en mappe som heter Migrations, med tree filer inni seg)
+5- dotnet ef database update
+6- dotnet ef migrations add AddedTodos     (I added a Todos table)
+7- dotnet watch    (For å se endringer direkte in i swager) 
+
+
+
